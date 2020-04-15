@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gallery</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1 id="title">Implementing a Gallery using CSS Grid</h1>
+        <h2 id="quote">every picture has a story....</h2>
+        <div id="grid-wrapper">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+<!-- ============= scripts and jquery for animation ============= -->
+
+<script src="jquery-3.2.1.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    var items = $("#grid-wrapper div");
+    items.on("click", function(){
+
+        $(this).addClass("twirl");
+
+    });
+    var activeClass = $(".twirl");
+    activeClass.on("click", function(){
+        $(this).addClass("noanimate");
+    });
+});
+
+
+
+</script>
+
+</html>

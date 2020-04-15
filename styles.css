@@ -1,0 +1,540 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.245), rgba(0, 0, 0, 0.245)), url('wooden.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#wrapper{
+    text-align: center;
+    width: inherit;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#title{
+    color: rgba(255, 255, 240, 0.623);
+    font-family: 'Moonstar';
+    letter-spacing: 3px;
+    stroke: black;
+    stroke-width: 3px;
+    stroke-dashoffset: inherit;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#quote{
+    display: block;
+    color: rgba(129, 58, 0, 0.849);
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Brush Script MT';
+    letter-spacing: 2px;
+}
+
+#grid-wrapper{
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 220px;
+    gap: 10px;      
+}
+
+#grid-wrapper div{
+    background-color: rgb(255, 160, 223);
+    border: 5px solid rgba(255, 255, 255, 0.404);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#grid-wrapper div:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: rgba(94, 189, 0, 0.5);
+    background-image: linear-gradient(to bottom left, rgba(0, 255, 106, 0.219), rgba(0, 0, 0, 0.945)), url('images/hero.jpg');
+    transform: scaleY(900px);
+}
+#grid-wrapper div:nth-child(2){
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: rgb(252, 0, 239, 0.5);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.745)), url('images/family.jpg');
+}
+#grid-wrapper div:nth-child(3){
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: rgb(154, 180, 129, 0.5);
+    background-image: linear-gradient(to bottom right, rgba(0, 255, 106, 0.342), rgba(0, 0, 0, 0.493)), url('images/rishineha.jpg');
+}
+#grid-wrapper div:nth-child(4){
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-color: rgb(9, 23, 83, 0.5);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('images/mummy.jpg');
+}
+#grid-wrapper div:nth-child(5){
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: rgb(109, 19, 19, 0.5);
+    background-image: linear-gradient(to right, rgba(255, 0, 76, 0.432), rgba(0, 0, 0, 0.945)), url('images/two.jpg');
+}
+#grid-wrapper div:nth-child(6){
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: rgb(160, 201, 119, 0.5);
+    background-image: linear-gradient(to bottom, rgba(50, 177, 255, 0.404), rgba(28, 0, 43, 0.9)), url('images/swag.jpg');
+}
+#grid-wrapper div:nth-child(7){
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background-color: rgb(0, 135, 145, 0.5);
+    background-image: linear-gradient(to left, rgba(255, 251, 0, 0.1), rgb(0, 0, 0)), url('images/heroinee.jpg');
+}
+#grid-wrapper div:nth-child(8){
+    grid-column: 3/5;
+    grid-row: 4/5;
+    background-color: rgb(151, 0, 238, 0.5);
+    background-image: linear-gradient(to left, rgba(110, 68, 0, 0.1), rgb(0, 0, 0)), url('images/one.jpg');
+}
+#grid-wrapper div:nth-child(9){
+    grid-column: 1/4;
+    grid-row: 5/7;
+    background-color: rgba(252, 113, 0, 0.534);
+    background-image: linear-gradient(to bottom left, rgba(15, 15, 15, 0.1), rgba(158, 98, 238, 0.404)), url('images/lead.jpg');
+}
+#grid-wrapper div:nth-child(10){
+    grid-column: 4/5;
+    grid-row: 5/8;
+    background-color: rgba(0, 109, 252, 0.5);
+    background-image: linear-gradient(to bottom, rgba(119, 63, 0, 0.6), rgba(212, 212, 212, 0.1)), url('images/neha.jpg');
+}
+#grid-wrapper div:nth-child(11){
+    grid-column: 1/2;
+    grid-row: 7/8;
+    background-color: rgb(56, 68, 43, 0.5);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.39)), url('images/teeth.jpg');
+}
+#grid-wrapper div:nth-child(12){
+    grid-column: 2/4;
+    grid-row: 7/10;
+    background-color: rgba(126, 252, 0, 0.548);
+    background-image: linear-gradient(to top, rgba(213, 163, 253, 0.205), rgba(158, 98, 255, 0.191)), url('images/papa.jpg');
+}
+#grid-wrapper div:nth-child(13){
+    grid-column: 1/2;
+    grid-row: 8/10;
+    background-color: rgb(252, 235, 0, 0.5);
+    background-image: linear-gradient(to bottom, rgba(217, 255, 0, 0.226), rgba(0, 0, 0, 0.637)), url('images/mandir.jpg');
+    background-origin: content-box;
+}
+#grid-wrapper div:nth-child(14){
+    grid-column: 4/5;
+    grid-row: 8/9;
+    background-color: rgba(45, 0, 75, 0.89);
+    background-image: linear-gradient(to bottom left, rgba(255, 94, 0, 0.22), rgba(255, 255, 255, 0.22)), url('images/diya.jpg');
+}
+#grid-wrapper div:nth-child(15){
+    grid-column: 1/4;
+    grid-row: 10/11;
+    background-color: rgb(248, 252, 0, 0.5);
+    background-image: linear-gradient(to bottom, rgba(255, 57, 156, 0.363), rgba(253, 253, 253, 0.3)), url('images/group.jpg');
+}
+#grid-wrapper div:nth-child(16){
+    grid-column: 4/5;
+    grid-row: 9/11;
+    background-color: rgb(252, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url('images/watch.jpg');
+}
+
+
+/* =================== MEDIA QUERIES ===================== */
+
+/* ============== for mobiles ================= */
+
+
+@media only screen and (max-width:560px){
+
+    #wrapper{
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    #quote{
+        display: block;
+        font-size: 12px;
+        font-weight: 300;
+        clear: both;
+    }
+
+    #title{
+        font-size: 20px;
+        font-family: 'Century Gothic';
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.417);
+    }
+    
+    #grid-wrapper{
+        width: 90%;
+        margin: 5%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 100px;
+        gap: 10px;      
+    }
+    
+    #grid-wrapper div{
+        background-color: rgba(250, 38, 179, 0.562);
+        border: 4px solid rgba(255, 255, 255, 0.404);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #grid-wrapper div:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: rgba(94, 189, 0, 0.5);
+        background-image: linear-gradient(to bottom left, rgba(0, 255, 106, 0.219), rgba(0, 0, 0, 0.945)), url('images/swag.jpg');
+    }
+    #grid-wrapper div:nth-child(2){
+        grid-column: 2/4;
+        grid-row: 1/3;
+        background-color: rgb(252, 0, 239, 0.5);
+        background-image: linear-gradient(to bottom, rgba(50, 177, 255, 0.404), rgba(28, 0, 43, 0.9)), url('images/m_collage.jpg');
+    }
+    #grid-wrapper div:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: rgb(154, 180, 129, 0.5);
+    }
+    #grid-wrapper div:nth-child(4){
+        grid-column: 1/4;
+        grid-row: 3/4;
+        background-color: rgb(9, 23, 83, 0.5);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.745)), url('images/family.jpg');
+    }
+    #grid-wrapper div:nth-child(5){
+        grid-column: 1/3;
+        grid-row: 4/5;
+        background-color: rgb(109, 19, 19, 0.5);
+        background-image: linear-gradient(to right, rgba(255, 0, 76, 0.28), rgba(0, 0, 0, 0.842)), url('images/m_ma.jpg');
+    }
+    #grid-wrapper div:nth-child(6){
+        grid-column: 3/4;
+        grid-row: 4/5;
+        background-color: rgb(160, 201, 119, 0.5);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.42), rgba(88, 0, 0, 0.78)), url('images/m_maa.png');
+    }
+    #grid-wrapper div:nth-child(7){
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: rgb(0, 135, 145, 0.5);
+    }
+    #grid-wrapper div:nth-child(8){
+        grid-column: 2/4;
+        grid-row: 5/6;
+        background-color: rgb(151, 0, 238, 0.5);
+    }
+    #grid-wrapper div:nth-child(9){
+        grid-column: 1/4;
+        grid-row: 6/7;
+        background-color: rgba(252, 113, 0, 0.534);
+        background-image: linear-gradient(to bottom, rgba(255, 57, 156, 0.363), rgba(253, 253, 253, 0.3)), url('images/group.jpg');
+    }
+    #grid-wrapper div:nth-child(10){
+        grid-column: 1/2;
+        grid-row: 7/8;
+        background-color: rgba(0, 109, 252, 0.5);
+    }
+    #grid-wrapper div:nth-child(11){
+        grid-column: 2/3;
+        grid-row: 7/8;
+        background-color: rgb(56, 68, 43, 0.5);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.39)), url('images/m_mp.jpg');
+    }
+    #grid-wrapper div:nth-child(12){
+        grid-column: 3/4;
+        grid-row: 7/8;
+        background-color: rgba(126, 252, 0, 0.548);
+       
+    }
+    #grid-wrapper div:nth-child(13){
+        grid-column: 1/2;
+        grid-row: 8/10;
+        background-color: rgb(252, 235, 0, 0.5);
+    }
+    #grid-wrapper div:nth-child(14){
+        grid-column: 2/3;
+        grid-row: 8/9;
+        background-color: rgba(45, 0, 75, 0.89);
+        background-image: linear-gradient(to bottom left, rgba(255, 94, 0, 0.22), rgba(255, 255, 255, 0.22)), url('images/m_bj.png');
+    }
+    #grid-wrapper div:nth-child(15){
+        grid-column: 2/3;
+        grid-row: 9/10;
+        background-color: rgb(248, 252, 0, 0.5);
+        background-image: linear-gradient(to bottom left, rgba(15, 15, 15, 0.1), rgba(158, 98, 238, 0.404)), url('images/lead.jpg');
+    }
+    #grid-wrapper div:nth-child(16){
+        grid-column: 3/4;
+        grid-row: 8/10;
+        background-color: rgb(252, 0, 0, 0.5);
+    }
+    
+}
+
+
+/* ============== for large screen devices and tablets ================= */
+
+@media only screen and (min-width:560px) and (max-width:768px){
+
+    #wrapper{
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    #quote{
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        clear: both;
+        margin: 0px;
+    }
+
+    #title{
+        font-size: 28px;
+        font-family: 'Century Gothic';
+        font-weight: 300;
+        letter-spacing: 2px;
+        stroke: rgba(0, 0, 0, 0.897);
+    }
+    
+    #grid-wrapper{
+        width: 90%;
+        margin: 5%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 150px;
+        gap: 10px;      
+    }
+    
+    #grid-wrapper div{
+        background-color: rgba(250, 38, 179, 0.562);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    #grid-wrapper div:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: rgba(94, 189, 0, 0.5);
+    }
+    #grid-wrapper div:nth-child(2){
+        grid-column: 2/4;
+        grid-row: 1/3;
+        background-color: rgb(252, 0, 239, 0.5);
+    }
+    #grid-wrapper div:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: rgb(154, 180, 129, 0.5);
+    }
+    #grid-wrapper div:nth-child(4){
+        grid-column: 1/4;
+        grid-row: 3/4;
+        background-color: rgb(9, 23, 83, 0.5);
+    }
+    #grid-wrapper div:nth-child(5){
+        grid-column: 1/3;
+        grid-row: 4/5;
+        background-color: rgb(109, 19, 19, 0.5);
+    }
+    #grid-wrapper div:nth-child(6){
+        grid-column: 3/4;
+        grid-row: 4/5;
+        background-color: rgb(160, 201, 119, 0.5);
+    }
+    #grid-wrapper div:nth-child(7){
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: rgb(0, 135, 145, 0.5);
+    }
+    #grid-wrapper div:nth-child(8){
+        grid-column: 2/4;
+        grid-row: 5/6;
+        background-color: rgb(151, 0, 238, 0.5);
+    }
+    #grid-wrapper div:nth-child(9){
+        grid-column: 1/4;
+        grid-row: 6/7;
+        background-color: rgba(252, 113, 0, 0.534);
+    }
+    #grid-wrapper div:nth-child(10){
+        grid-column: 1/2;
+        grid-row: 7/8;
+        background-color: rgba(0, 109, 252, 0.5);
+    }
+    #grid-wrapper div:nth-child(11){
+        grid-column: 2/3;
+        grid-row: 7/8;
+        background-color: rgb(56, 68, 43, 0.5);
+    }
+    #grid-wrapper div:nth-child(12){
+        grid-column: 3/4;
+        grid-row: 7/8;
+        background-color: rgba(126, 252, 0, 0.548);
+    }
+    #grid-wrapper div:nth-child(13){
+        grid-column: 1/2;
+        grid-row: 8/10;
+        background-color: rgb(252, 235, 0, 0.5);
+    }
+    #grid-wrapper div:nth-child(14){
+        grid-column: 2/3;
+        grid-row: 8/9;
+        background-color: rgba(45, 0, 75, 0.89);
+    }
+    #grid-wrapper div:nth-child(15){
+        grid-column: 2/3;
+        grid-row: 9/10;
+        background-color: rgb(248, 252, 0, 0.5);
+    }
+    #grid-wrapper div:nth-child(16){
+        grid-column: 3/4;
+        grid-row: 8/10;
+        background-color: rgb(252, 0, 0, 0.5);
+    }
+
+}
+
+
+/* ================= animations ================== */
+
+@keyframes twirl{
+    0%{
+        transform: rotateZ(90deg);
+    }
+    25%{
+        transform: rotateZ(180deg);
+    }
+    50%{
+        transform: rotateZ(360deg);
+    }
+    75%{
+        transform: rotateZ(45deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes zoomin{
+    0%{
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    25%{
+        transform: scale(0.1);
+        opacity: 0.8;    
+    }
+    50%{
+        transform: scale(2);
+        transition-delay: 1.5s;
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes drop{
+    0%{ opacity: 0; }
+    70%{ transform: translateX(0px); }
+    100%{ transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes swing{
+    0%{ 
+        transform: rotateZ(20deg);
+    }
+    40%{ 
+        transform: rotateZ(-20deg);
+    }
+    60%{
+        transform: rotateZ(30deg);
+    }
+    80%{
+        transform: rotateZ(-30deg);
+    }
+    100%{ 
+        transform: rotateZ(0deg);
+    }
+}
+
+#grid-wrapper div:hover{
+    animation: twirl 2s,
+               swing 3s cubic-bezier(.07, 0.84, 0.96, .23) forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0ms;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform-origin: 50%;
+}
+
+.twirl{
+    animation: zoomin 3s;
+    transform: scale(1);
+    animation-direction: normal;
+    animation-delay: 0s;
+    opacity: 0.9;
+}
+
+
+.noanimate{
+    animation: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    ========== more wrapper templates for future use =========
+
+#grid-wrapper div:nth-child(){
+    grid-column: ;
+    grid-row: ;
+}
+#grid-wrapper div:nth-child(){
+    grid-column: ;
+    grid-row: ;
+}
+#grid-wrapper div:nth-child(){
+    grid-column: ;
+    grid-row: ;
+}
+#grid-wrapper div:nth-child(){
+    grid-column: ;
+    grid-row: ;
+}
+
+
+*/
